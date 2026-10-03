@@ -120,36 +120,55 @@
 
 
 # Check karo ki number prime hai ya nahi.
-
-
+# num = int(input("Enter a number : "))
+# i = 1
+# count = 0
+# while i <= num:
+#     if num % i == 0:
+#         count +=1
+#     i +=1
+        
+# if count == 2:
+#     print(f"{num} is prime number")
+# else:
+#     print(f"{num} is not a prime number")
 
 # n terms tak Fibonacci series print karo.
 
+# num = int(input("Enter a number : "))
+# i = 1
+# a = 0
+# b = 1
+# while i <= num:
+#     print(a,end=" ") 
+#     c = a + b
+#     a = b
+#     b = c
+#     i +=1
+    
+
 # User se numbers input lete raho jab tak user 0 enter na kare. End me total sum print karo.
+# sum = 0
+# while True:
+#     num = int(input("Enter a number : "))
+#     sum += num
+#     if num == 0:
+#         break
+    
+# print(sum)
 
 # User se numbers input lete raho aur positive aur negative numbers ki count batao. 0 par stop karo.
+# pos_count = 0
+# neg_count = 0
+# while True:
+#     num = int(input("Enter a number : "))
+#     if num > 0:
+#         pos_count += 1
+#     elif num < 0:
+#         neg_count +=1
+#     else:
+#         break
+    
+# print(pos_count)
+# print(neg_count)
 
-# 🔴 Challenge
-# GCD/HCF of two numbers find karo using while.
-
-# Number ka largest digit find karo.
-# Example: 58329 → 9
-
-# Number ka smallest digit find karo.
-
-# Check karo ki number Armstrong number hai ya nahi.
-# Example: 153 → Armstrong
-
-# User ko repeatedly number guess karne do jab tak correct number guess na ho.
-
-# ATM menu banao:
-
-# 1 → Balance
-
-# 2 → Deposit
-
-# 3 → Withdraw
-
-# 4 → Exit
-
-# Program 4 enter hone tak chalta rahe.
