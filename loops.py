@@ -70,35 +70,93 @@
 #             count+=1
 #     if count == 2:
 #         print(num)
+
 # 15. Digit Sum
 # User se ek number lo aur uske digits ka sum nikalo.
 # Example: 583 → 16
+# num = int(input("Enter a number : "))
+# sum = 0
+# while num > 0:
+#     digit = num % 10
+#     sum += digit
+#     num = num // 10
+    
+# print(sum)
+
 
  
 # 16. Reverse Number
 # User se ek number lo aur uska reverse nikalo.
 # Example: 12345 → 54321
 # Answer:
- 
+# num = 5678
+# rev = 0
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num //= 10
+    
+# print(rev)
+
 # 17. Even & Odd Count
 # 1 se 100 tak kitne even aur kitne odd numbers hain, count karo.
 # Answer:
- 
+# even_count = 0
+# odd_count = 0
+# i = 1
+# while i <= 100:
+#     if i % 2 == 0:
+#         even_count +=1 
+#     else:
+#         odd_count += 1
+#     i +=1
+    
+# print(f"even numbers : {even_count}")
+# print(f"odd numbers : {odd_count}")
+
+
+
 # 18. Sum of Squares
 # User se n lo aur:
 # 1² + 2² + 3² + ... + n²
 # ka result nikalo.
 # Answer:
- 
+# num = int(input("Enter a number : "))
+# sum = 0
+
+# for i in range(1,num +1):
+#     sum = sum + i * i
+    
+# print(sum)
+
+
 # 19. Divisible by 3 and 5
 # 1 se 100 tak woh numbers print karo jo 3 aur 5 dono se divisible hain.
 # Answer:
+
+# i = 1
+# while i <= 100:
+#     if i % 3 == 0 and i % 5 == 0:
+#         print(i)
+#     i += 1
+    
+
  
 # 20. Fibonacci Series
 # User se n lo aur Fibonacci series ke first n terms print karo.
 # Example:
 # 0 1 1 2 3 5 8 13...
 # Answer:
+# num = int(input("Enter a number : "))
+# i = 1
+# a = 0
+# b = 1
+# while i <= num:
+#     print(a,end=" ") 
+#     c = a + b
+#     a = b
+#     b = c
+#     i +=1
  
  
 # 🟠 Level 3 — Nested for Loop
@@ -109,6 +167,12 @@
 # ****
 # *****
 # Answer:
+
+# for i in range(1,6):
+#     for j in range(i):
+#         print("*",end="")
+#     print()
+    
  
 # 22. Reverse Star Pattern
 # *****
@@ -117,6 +181,10 @@
 # **
 # *
 # Answer:
+# for i in range(1,6):
+#     for j in range(6,i,-1):
+#         print("*",end="")
+#     print()
  
 # 23. Number Pattern
 # 1
@@ -125,6 +193,10 @@
 # 1234
 # 12345
 # Answer:
+# for i in range(1,6):
+#     for j in range(i):
+#         print(j +1,end="")
+#     print()
  
 # 24. Repeated Number Pattern
 # 1
@@ -133,10 +205,17 @@
 # 4444
 # 55555
 # Answer:
+# for i in range(1,6):
+#     for j in range(i):
+#         print(i,end="")
+#     print()
  
 # 25. Multiple Tables
 # 1 se 5 tak multiplication tables ek saath print karo.
 # Answer:
+for i in range(1,6):
+    for j in range(1,11):
+        print(f"{i} * {j} = {i * j}")
  
 # 26. Square Pattern
 # *****
@@ -145,6 +224,11 @@
 # *****
 # *****
 # Answer:
+
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print("*",end="")
+#     print()
  
 # 27. Number Grid
 # 12345
@@ -153,37 +237,11 @@
 # 12345
 # 12345
 # Answer:
+# for i in range(1,6):
+#     for j in range(1,6):
+#         print(j,end="")
+#     print()
  
- 
-# 🔴 Level 4 — Challenge
-# 28. Armstrong Numbers
-# 1 se 100 ke andar saare Armstrong numbers find karo.
-# Answer:
-
-# 29. Perfect Numbers
-# 1 se 1000 ke andar saare Perfect numbers find karo.
-# Answer:
- 
-# 30. FizzBuzz
-# 1 se 100 tak numbers print karo:
-# • 3 se divisible → Fizz
-# • 5 se divisible → Buzz
-# • 3 aur 5 dono se divisible → FizzBuzz
-# • Otherwise → number itself
-# Answer:
- 
- 
-# ⭐ Bonus Challenge
-# Bina while loop use kiye, sirf for loop se:
-# 1 se 1000 tak kaunsa number sabse zyada baar kisi condition ko satisfy karta hai, uska logic khud design karo.
-# Answer:
- 
- 
-# 🎯 Goal
-# Pehle Level 1 → phir Level 2 → phir Nested Loops → finally Challenge.
-# Har question ko khud solve karne ki koshish karo. Agar code nahi ban raha ho, pehle paper par logic/steps likho
-
-
 
 # Ek string lo aur for loop ka use karke har character ko alag-alag line me print karo.
 # str = input("Enter a string")
